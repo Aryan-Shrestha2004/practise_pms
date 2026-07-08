@@ -47,7 +47,7 @@ const [products, setProducts] = useState([]);
   
     </div> */}
 
-
+<div className="product-container">
 {products.map((product) => {
   return (
     <div className="card" key={product.id}>
@@ -61,12 +61,14 @@ const [products, setProducts] = useState([]);
 
 
         <p>{product.productDescription}</p>
+        <p><strong>Material:</strong> {product.productMaterial}</p>
 
         <button>View Product</button>
       </div>
     </div>
   );
 })}
+</div>
     </>  
   )
 }

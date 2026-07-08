@@ -1,5 +1,7 @@
 import './Navbar.css'
 
+import { Link } from "react-router-dom";
+
  const Navbar = () => {
   return (
    <nav className="navbar">
@@ -9,10 +11,14 @@ import './Navbar.css'
   <label htmlFor="menu-toggle" className="menu-icon">&#9776;</label>
 
   <ul className="nav-links">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Products</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Contact</a></li>
+    <li><Link to="/">Home</Link></li>
+
+    {/* <li><Link to="/products">Products</Link></li>
+    <li><Link to="/about">About</Link></li>
+    <li><Link to="/contact">Contact</Link></li> */}
+    
+    <li><Link to="/addProduct">Add Product</Link></li>
+
   </ul>
 </nav>
 
