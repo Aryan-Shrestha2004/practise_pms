@@ -13,6 +13,7 @@ const EditProduct = () => {
   const [productDescription, setProductDescription] = useState("");
   const [productMaterial, setProductMaterial] = useState("");
 
+  //fetch product details from api and set in state
   useEffect(() => {
     const fetchProduct = async () => {
       try {
@@ -31,6 +32,8 @@ const EditProduct = () => {
 
     fetchProduct();
   }, [id]);
+
+  //edit product details and update in api
 
   const handleSubmit = async (e) => {
     e.preventDefault();
