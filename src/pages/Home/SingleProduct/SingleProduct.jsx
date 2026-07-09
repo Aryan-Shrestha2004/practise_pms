@@ -67,6 +67,10 @@ const SingleProduct = () => {
           </h3>
 
           <button onClick={deleteProduct}>Delete Product</button>
+
+          <button onClick={() => navigate(`/editProduct/${id}`)}>
+            Edit Product
+          </button>
         </div>
       </div>
     </>
